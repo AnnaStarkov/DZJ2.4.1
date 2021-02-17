@@ -20,65 +20,65 @@ class StatsServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void AverageAmount() {
+    void averageAmount() {
         StatsService service = new StatsService();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
 
         // вызываем целевой метод:
-        long actual = service.AverageAmount(purchases);
+        long actual = service.averageAmount(purchases);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
-    void MaxMonth() {
+    void maxMonth() {
         StatsService service = new StatsService();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
         // вызываем целевой метод:
-        long actual = service.MaxMonth(purchases);
+        long actual = service.maxMonth(purchases);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
-    void MinMonth() {
+    void minMonth() {
         StatsService service = new StatsService();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 8;
 
         // вызываем целевой метод:
-        long actual = service.MinMonth(purchases);
+        long actual = service.minMonth(purchases);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
-    void MinAverage() {
+    void minAverage() {
         StatsService service = new StatsService();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
         // вызываем целевой метод:
-        long actual = service.MinAverage(purchases);
+        long actual = service.minAverage(purchases);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
     }
 
     @org.junit.jupiter.api.Test
-    void MaxAverage() {
+    void maxAverage() {
         StatsService service = new StatsService();
         long[] purchases = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
 
         // вызываем целевой метод:
-        long actual = service.MaxAverage(purchases);
+        long actual = service.maxAverage(purchases);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         assertEquals(expected, actual);
