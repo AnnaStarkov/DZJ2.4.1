@@ -14,7 +14,7 @@ public class StatsService {
 
     public long averageAmount(long[] purchases) {
         long sum = calculateSum(purchases);
-        return sum/12;
+        return sum/purchases.length;
     }
 
     public long maxMonth(long[] purchases) {
@@ -43,9 +43,7 @@ public class StatsService {
 
 
     public long minAverage(long[] purchases) {
-        long sum = calculateSum(purchases);
-        long average = 0;
-        average = sum/purchases.length;
+        long average = averageAmount(purchases);
         long index = 0;
         for (int i = 0; i < purchases.length; i++) {
             if (purchases[i] < average) {
@@ -56,9 +54,7 @@ public class StatsService {
     }
 
     public long maxAverage(long[] purchases) {
-        long sum = calculateSum(purchases);
-        long average = 0;
-        average = sum/purchases.length;
+        long average = averageAmount(purchases);
         long index = 0;
         for (int i = 0; i < purchases.length; i++) {
             if (purchases[i] > average) {
